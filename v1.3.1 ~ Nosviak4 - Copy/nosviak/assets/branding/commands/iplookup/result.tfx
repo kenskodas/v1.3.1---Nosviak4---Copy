@@ -1,0 +1,8 @@
+ \x1b[0mIP: \x1b[1m<<result.$query>>\x1b[0m
+
+ ASN: \x1b[1m<<result.$asn>>\x1b[0m
+ Continent: \x1b[1m<<result.$continent>>\x1b[0m
+ City: \x1b[1m<<result.$city>>\x1b[0m
+ Country: \x1b[1m<<result.$country>>\x1b[0m
+ Org: \x1b[1m<<result.$org>>\x1b[0m
+

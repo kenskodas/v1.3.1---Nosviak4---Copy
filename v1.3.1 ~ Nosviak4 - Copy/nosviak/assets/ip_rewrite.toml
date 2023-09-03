@@ -1,0 +1,15 @@
+# List of all users names which the placeholder IP address will be
+# used for protecting their privacy.
+users=[
+          "root",
+          "hi"
+]
+
+# list of roles which we will not log their IPs
+roles=[
+          "admin"
+]
+
+placerholder_ip="1.2.3.4"
+# Toggle the IP rewrite system
+enabled=true

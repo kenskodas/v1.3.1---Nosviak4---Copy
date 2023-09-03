@@ -1,0 +1,1 @@
+ <escape>\x1b[48;5;11;38;5;16m ! \x1b[0;38;5;15m <<row.$username>> <escape>

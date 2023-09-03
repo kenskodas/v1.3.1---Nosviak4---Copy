@@ -1,0 +1,8 @@
+name="myip"
+description="shows your current IP address"
+# permissions who can access this command
+permissions="admin"
+# themes which have this command within their scope
+themes="default"
+============================ START ============================
+Your IP address is: <<$ip>>

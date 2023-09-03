@@ -1,0 +1,2 @@
+ \x1b[0mPlease set the max attack time in seconds (0 = no limit).
+ Set Max Attack Time> \x1b[38;5;11m

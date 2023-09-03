@@ -1,0 +1,11 @@
+<?swash
+              // lookups the target address
+              const target = iplookup($target)
+?> Method: <<$method>> 
+ Target: <<$target>>
+ Port: <<$port>>
+ Time: <<$duration>>
+
+ ASN: <<target.$asn>>
+ Country: <<target.$country>>
+ Org: <<target.$org>>

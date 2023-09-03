@@ -1,0 +1,3 @@
+The attack failed to launch due to an error. Since you have superuser permissions, here's a trace of what went wrong.
+----------------------------------
+<<$err>>

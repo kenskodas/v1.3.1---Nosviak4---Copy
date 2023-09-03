@@ -1,0 +1,1 @@
+ \x1b[48;2;33;150;243;38;5;15;1m Broadcast (<<sender.$username>>:WEB) \x1b[0m \x1b[97m<<$message>>\x1b[0m

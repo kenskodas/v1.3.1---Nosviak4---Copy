@@ -1,0 +1,8 @@
+<?swash
+	const $telegram = "https://t.me/NosviakCNC"
+
+
+?>
+<<clear()>>\x1b[38;5;15mWelcome to <<cnc()>>, <<user.$username>>. Join our telegram: <<$telegram>>.
+<<spinner("greetings")>>
+

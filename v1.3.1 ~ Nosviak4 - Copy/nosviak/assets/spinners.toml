@@ -1,0 +1,29 @@
+# Create your own spinner
+# The name is used in Swash to execute the spinner. Use <<spinner("greetings")>>
+# to display the spinner. 'Ticks' indicates the number of ticks to wait until, ticks are measured in milliseconds.
+# the next frame is rendered.
+[spinner]
+frames = [
+              "|", "/", "-", "\\"
+]
+
+ticks = 500
+
+[greetings]
+frames=[
+              "Hello and welcome to Nosviak4, we're glad to have you here.",
+              "Salutations! Your journey begins now.",
+              "Utilize the 'Tab' key for command auto-completion - it's a lifesaver.",
+              "Keep track of your attacks easily, just type 'attacks'.",
+              "A warm welcome, <<user.$username>>, to Nosviak4.",
+              "Look who's just joined us...",
+              "Congratulations on choosing Nosviak4. Let's make some magic happen.",
+              "Need assistance? Don't hesitate to reach out to our support.",
+              "You're all set, <<user.$username>>. Let the adventures begin.",
+              "Back for more, we see. Welcome back!",
+              "Don't forget, 'Tab' is your best friend for command completion.",
+              "Hello again, <<user.$username>>, let's pick up where you left off.",
+              "Guess who's back in the game..."
+]
+
+ticks=1000

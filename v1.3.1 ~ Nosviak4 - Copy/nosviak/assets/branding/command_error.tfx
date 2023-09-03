@@ -1,0 +1,6 @@
+ Error occurred when executing command.
+<?swash
+          if (user.has_role("admin")) {
+                    printf(" Err: %v", $err)
+          }
+?>

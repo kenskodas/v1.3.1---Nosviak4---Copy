@@ -1,0 +1,1 @@
+ <escape>\x1b[38;5;9m<<row.$username>>\x1b[0m <escape>

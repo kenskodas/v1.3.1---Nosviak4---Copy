@@ -1,0 +1,7 @@
+<?swash
+          if (is_online(row.$username) == false) {
+                    print(" "+ row.$username +"")
+                    return
+          }
+
+?> <escape>\x1b[96m🌐\x1b[0m \x1b[38;5;15m<<row.$username>>\x1b[0m <escape>

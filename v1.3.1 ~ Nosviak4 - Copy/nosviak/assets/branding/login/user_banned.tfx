@@ -1,0 +1,32 @@
+<?swash
+	func center($str: string, $pos: int) -> string {
+		return padright("", ($pos / 2) - (len($str) / 2)) + $str + padright("", ($pos / 2) - (len($str) / 2))
+	}
+?>
+<<clear()>>\x1b[0;48;5;9m<<padright("", 80)>>\x1b[0m
+\x1b[0;48;5;9m<<padright("", 80)>>\x1b[0m
+\x1b[0;48;5;9m<<padright("", 80)>>\x1b[0m
+\x1b[0;48;5;9m<<padright("", 80)>>\x1b[0m
+\x1b[0;48;5;9m<<padright("", 80)>>\x1b[0m
+\x1b[0;48;5;9m<<padright("", 80)>>\x1b[0m
+\x1b[0;48;5;9m<<padright("", 80)>>\x1b[0m
+\x1b[0;48;5;9m<<padright("", 80)>>\x1b[0m
+\x1b[0;48;5;9m<<padright("", 80)>>\x1b[0m
+\x1b[0;48;5;9m<<padright("", 80)>>\x1b[0m
+\x1b[0;48;5;9m<<padright("", 80)>>\x1b[0m
+\x1b[0;48;5;9m<<padright("", 80)>>\x1b[0m
+\x1b[0;48;5;9m<<padright("", 80)>>\x1b[0m
+\x1b[0;48;5;9m<<padright("", 80)>>\x1b[0m
+\x1b[0;48;5;9m<<padright("", 80)>>\x1b[0m
+\x1b[0;48;5;9m<<padright("", 80)>>\x1b[0m
+\x1b[0;48;5;9m<<padright("", 80)>>\x1b[0m
+\x1b[0;48;5;9m<<padright("", 80)>>\x1b[0m
+\x1b[0;48;5;9m<<padright("", 80)>>\x1b[0m
+\x1b[0;48;5;9m<<padright("", 80)>>\x1b[0m
+\x1b[0;48;5;9m<<padright("", 80)>>\x1b[0m
+\x1b[0;48;5;9m<<padright("", 80)>>\x1b[0m
+\x1b[0;48;5;9m<<padright("", 80)>>\x1b[0m
+\x1b[0;48;5;9m<<padright("", 80)>>\x1b[0m
+\x1b[0;48;5;9m<<padright("", 80)>>\x1b[37;1m\x1b[13A\r<<center("Access Denied", 78)>>\x1b[0;48;5;9m
+<<center("Your account has been banned!", 78)>>
+<<sleep(5000)>>

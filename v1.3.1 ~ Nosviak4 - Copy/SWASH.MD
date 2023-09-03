@@ -1,0 +1,86 @@
+# Swash
+
+Nosviak4 incorporates a specially crafted Turing complete DSL, elevating your customization possibilities within your branding files. This signifies that you can infuse logic into your branding, transcending the realm of conventional static designs. Did I mention that you can write TUI directly within your branding files?
+
+- clear()                               NIL                 <<clear()>>
+- exec($c: string)                      NIL                 <<exec("cls")>>
+- $version                              STRING              <<$version>>
+- cnc()                                 STRING              <<cnc()>>
+- $uptime                               UNIX_TIMESTAMP      <<$uptime>>                       <<time.since($uptime)>>
+- $fake_slaves                          NUMBER              <<$fake_slaves>>
+- user
+        - $id                           NUMBER              <<user.$id>>
+        - $username                     STRING              <<user.$username>>
+        - $theme                        STRING              <<user.$theme>>
+        - $maxtime                      NUMBER              <<user.$maxtime>>
+        - $cooldown                     NUMBER              <<user.$cooldown>>
+        - $conns                        NUMBER              <<user.$conns>>
+        - has_role($r: string)          BOOL                <<user.has_role("admin")>>
+        - warns()                       NUMBER              <<user.warns()>>
+        - $expiry                       UNIX_TIMESTAMP      <<user.$expiry>>                  <<time.until(user.$expiry)>> <<time.unix(user.$expiry, "2006-02-01")>>
+        - $created                      UNIX_TIMESTAMP      <<user.$created>>                 <<time.since(user.$created)>>
+        - $api                          BOOL                <<user.$api>>
+        - $new_user                     BOOL                <<user.$new_user>>
+        - $telegram                     NUMBER              <<user.$telegram>>
+        - $max_sessions                 NUMBER              <<user.$max_sessions>>
+        - last_login            
+                - $id                   NUMBER              <<user.last_login.$id>>
+                - $username             STRING              <<user.last_login.$username>>
+                - $terminal             STRING              <<user.last_login.$terminal>>
+                - $created              UNIX_TIMESTAMP      <<user.last_login.$created>>      <<time.since(user.last_login.$created)>>
+                - $ip                   STRING              <<user.last_login.$ip>>
+        - last_attack           
+                - $id                   NUMBER              <<user.last_attack.$id>>
+                - $user                 NUMBER              <<user.last_attack.$user>>
+                - $group                STRING              <<user.last_attack.$group>>
+                - $method               STRING              <<user.last_attack.$method>>
+                - $target               STRING              <<user.last_attack.$target>>
+                - $resolved             STRING              <<user.last_attack.$resolved>>
+                - $port                 NUMBER              <<user.last_attack.$port>>
+                - $duration             NUMBER              <<user.last_attack.$duration>>
+                - $created              NUMBER              <<user.last_attack.$created>>     <<time.since(user.last_attack.$created)>>
+                                                                                              <<time.until(user.last_attack.$created + user.last_attack.$duration)>>
+- db
+        - countUsers($f: %string)       NUMBER              <<db.countUsers()>>, <<db.countUsers("active")>>, <<db.countUsers("banned")>>, <<db.countUsers("expired")>>
+        - ongoing()                     NUMBER              <<db.ongoing()>>
+        - ongoingUser($u: string)       NUMBER              <<db.ongoingUser("root")>>, <<db.ongoingUser(user.$username)>>
+        - attacks()                     NUMBER              <<db.attacks()>>
+        - attacksUser()                 NUMBER              <<db.attacksUser("root")>>, <<db.attacksUser(user.$username)>>
+- time
+        - $microsecond                  NUMBER              <<time.$microsecond>>
+        - $millisecond                  NUMBER              <<time.$millisecond>>
+        - $second                       NUMBER              <<time.$second>>
+        - $minute                       NUMBER              <<time.$minute>>
+        - $hour                         NUMBER              <<time.$hour>>
+        - sleep($d: number)             NIL                 <<time.sleep(1 * time.$second)>>
+        - now()                         UNIX_TIMESTAMP      <<time.now()>>
+        - unix($u: number, $f: string)  STRING              <<time.unix(time.now(), "2006-02-01")>>
+        - hours($u: number)             NUMBER              <<time.hours(time.now())>>
+        - minutes($u: number)           NUMBER              <<time.minutes(time.now())>>
+        - seconds($u: number)           NUMBER              <<time.seconds(time.now())>>
+        - until($u: number)             STRING              <<time.until(time.now() + ( 20 * time.$second ))>>
+        - since($u: number)             STRING              <<time.since(time.now() - ( 20 * time.$second ))>>
+- json
+        - encode($a: any)               STRING              <<json.encode(user)>>
+        - decode($a: string)            OBJECT              <<json.decode("{'user':'root'}")>>
+- http
+        - $GET                          STRING              <<http.$GET>>
+        - $PUT                          STRING              <<http.$PUT>>
+        - $POST                         STRING              <<http.$POST>>
+        - make($m: string, $u: string) `IN THIS EXAMPLE THE OUTPUT IS ASSIGNED TO A VAR CALLED X`
+                - SetTimeout($d: number)                    <<x.SetTimeout(1 * time.$second)>>
+                - AddHeader($n: string, $v: string)         <<x.AddHeader("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36")>>
+                - Do()                  STRING              <<x.Do()>>
+                - DoWithJson()          OBJECT              <<x.DoWithJson()>>
+- glamour
+        - $escape                       STRING              <<glamour.$escape>>
+        - $foreground                   STRING              <<glamour.$foreground>>
+        - $background                   STRING              <<glamour.$background>>
+        - newGradient() `IN THIS EXAMPLE THE OUTPUT IS ASSIGNED TO A VAR CALLED X` <<glamour.newGradient()>>
+                - AppendRgbToGradient($r: number, $g: number, $b: number) <<x.AppendRgbToGradient(255, 255, 0)>>
+                - Marshal($m: string, $c: string)           <<x.Marshal(glamour.$foreground, "Hi")>>
+                - ResetRGB()                                <<x.ResetRGB()>>
+        - newThemeGradient($t: string) `IN THIS EXAMPLE THE OUTPUT IS ASSIGNED TO A VAR CALLED X` <<glamour.newThemeGradient(user.$theme)>>
+                - AppendRgbToGradient($r: number, $g: number, $b: number) <<x.AppendRgbToGradient(255, 255, 0)>>
+                - Marshal($m: string, $c: string)           <<x.Marshal(glamour.$foreground, "Hi")>>
+                - ResetRGB()                                <<x.ResetRGB()>>

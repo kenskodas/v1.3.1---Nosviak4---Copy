@@ -1,0 +1,29 @@
+name="stats"
+description="count the amount of users in catagories"
+# permissions who can access this command
+permissions="admin"
+# themes which have this command within their scope (empty to not assign to a theme)
+themes=""
+============================ START ============================
+<?swash
+	// gets all the active users, non-expired unbanned users.
+	var $activeCount = db.countUsers("active")
+	if ($activeCount >= 1) {
+		printf(" Active: %d", $activeCount)
+	}
+
+	// gets all the expired users
+	var $expiredCount = db.countUsers("expired")
+	if ($expiredCount >= 1) {
+		printf(" Expired: %d", $expiredCount)
+	}
+
+	// gets all the banned users
+	var $bannedCount = db.countUsers("banned")
+	if ($bannedCount >= 1) {
+		printf(" Banned: %d", $bannedCount)
+	}
+
+	// prints the total amount of users
+	printf(" Total: %d", db.countUsers())
+?>

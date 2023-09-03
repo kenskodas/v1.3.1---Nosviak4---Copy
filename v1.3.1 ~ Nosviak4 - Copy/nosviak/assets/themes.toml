@@ -1,0 +1,24 @@
+# name is the CNC name and will displayed a lot and must be set correctly
+app_name="Nosviak4"
+# default_theme is the default theme for the cnc
+default_theme="default"
+# theme_changer is a list of all the access arrangements
+theme_changer=[
+        "member",
+        "vip",
+        "admin",
+        "mod"
+]
+
+[default]
+hidden=false
+description="The default theme of the CNC"
+branding="./assets/branding/"
+
+[default.glamour]
+enabled=true
+colours=[
+        [254,172,94],
+        [199,121,208],
+        [75,192,200]
+]

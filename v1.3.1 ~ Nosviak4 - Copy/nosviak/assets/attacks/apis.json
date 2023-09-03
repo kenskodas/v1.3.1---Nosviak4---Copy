@@ -1,0 +1,74 @@
+{
+	"tcp": {
+		"description": "Send an attack with tcp",
+		"access": [
+			""
+		],
+		"ip_allowed": true,
+		"url_allowed": false,
+		"default_port": 80,
+		"default_duration": 30,
+		"options": {
+			"enhanced_maxtime": 0,
+			"maxtime_override": 0,
+			"minimum_duration": 0,
+			"method_group": "",
+			"api": false,
+			"bot": false,
+			"bypass_cooldown": false,
+			"ongoing_cap": 0
+		},
+		"url_encoding": true,
+		"urls": [
+			"https://www.googleapis.com/",
+			"https://www.another.com/"
+		]
+	},
+	"tls": {
+		"description": "Send an attack with tls",
+		"access": [
+			""
+		],
+		"ip_allowed": true,
+		"url_allowed": false,
+		"default_port": 80,
+		"default_duration": 30,
+		"options": {
+			"enhanced_maxtime": 0,
+			"maxtime_override": 0,
+			"minimum_duration": 0,
+			"method_group": "",
+			"api": false,
+			"bot": false,
+			"bypass_cooldown": false,
+			"ongoing_cap": 0
+		},
+		"url_encoding": true,
+		"urls": [
+			"https://www.googleapis.com/",
+			"https://www.another.com/"
+		]
+	},
+	"udp": {
+		"description": "Send an attack with udp",
+		"access": [],
+		"ip_allowed": true,
+		"url_allowed": false,
+		"default_port": 80,
+		"default_duration": 30,
+		"options": {
+			"enhanced_maxtime": 0,
+			"maxtime_override": 3000,
+			"minimum_duration": 0,
+			"method_group": "",
+			"api": false,
+			"bot": false,
+			"bypass_cooldown": false,
+			"ongoing_cap": 0
+		},
+		"url_encoding": false,
+		"urls": [
+			"https://www.googleapis.com/"
+		]
+	}
+}

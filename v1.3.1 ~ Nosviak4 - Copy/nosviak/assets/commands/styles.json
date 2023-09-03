@@ -1,0 +1,65 @@
+{
+              "default": {
+                            "header": {
+                                          "HeaderLeft": " ",
+                                          "HeaderRight": " ",
+                                          "HeaderIntersection": " ",
+                                          "BelowHeaderLeft": " ",
+                                          "BelowHeaderRight": " ",
+                                          "BelowHeaderIntersection": " ",
+                                          "BelowHeaderHorizontal": "-"
+                    },
+                    
+                    "body": {
+                              "ValueLeft": " ",
+                              "ValueRight": " ",
+                              "ValueIntersection": " "
+                    }
+          },
+
+          "enclosed": {
+                    "header": {
+                              "AboveHeaderLeft": "╔",
+                              "AboveHeaderRight": "╗",
+                              "AboveHeaderHorizontal": "═",
+                              "AboveHeaderIntersection": "╦",
+
+                              "HeaderLeft": "║",
+                              "HeaderRight": "║", 
+                              "HeaderIntersection": "║",
+
+                              "BelowHeaderLeft": "╠",
+                              "BelowHeaderRight": "╣",
+                              "BelowHeaderHorizontal": "-",
+                              "BelowHeaderIntersection": "╬"
+                    },
+
+                    "body": {
+                              "ValueLeft": "║",
+                              "ValueRight": "║",
+                              "ValueIntersection": "║",
+                              "BelowBodyLeft": "╚",
+                              "BelowBodyRight": "╝",
+                              "BelowBodyHorizontal": "═",
+                              "BelowBodyIntersection": "╩"
+                    }
+          },
+
+          "slick": {
+                    "header": {
+                              "HeaderLeft": " ",
+                              "HeaderRight": " ",
+                              "HeaderIntersection": " ",
+                              "BelowHeaderLeft": " ",
+                              "BelowHeaderRight": "<escape>\\x1b[38;5;15m⮞<escape>",
+                              "BelowHeaderIntersection": " ",
+                              "BelowHeaderHorizontal": "─"
+                    },
+                    
+                    "body": {
+                              "ValueLeft": " ",
+                              "ValueRight": " ",
+                              "ValueIntersection": " "
+                    }
+          }
+}

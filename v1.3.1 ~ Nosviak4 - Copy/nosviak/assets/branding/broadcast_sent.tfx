@@ -1,0 +1,1 @@
+ Broadcasted the message with a length of <<len($message)>> to <<$sent>>.

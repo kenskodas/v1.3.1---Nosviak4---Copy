@@ -1,0 +1,31 @@
+<<clear()>><?swash
+	func center($str: string, $pos: int) -> string {
+		return padright("", ($pos / 2) - (len($str) / 2)) + $str + padright("", ($pos / 2) - (len($str) / 2))
+	}
+?>
+<<clear()>>\x1b[0;48;5;9m<<padright("", session.$width)>>\x1b[0m
+\x1b[0;48;5;9m<<padright("", session.$width)>>\x1b[0m
+\x1b[0;48;5;9m<<padright("", session.$width)>>\x1b[0m
+\x1b[0;48;5;9m<<padright("", session.$width)>>\x1b[0m
+\x1b[0;48;5;9m<<padright("", session.$width)>>\x1b[0m
+\x1b[0;48;5;9m<<padright("", session.$width)>>\x1b[0m
+\x1b[0;48;5;9m<<padright("", session.$width)>>\x1b[0m
+\x1b[0;48;5;9m<<padright("", session.$width)>>\x1b[0m
+\x1b[0;48;5;9m<<padright("", session.$width)>>\x1b[0m
+\x1b[0;48;5;9m<<padright("", session.$width)>>\x1b[0m
+\x1b[0;48;5;9m<<padright("", session.$width)>>\x1b[0m
+\x1b[0;48;5;9m<<padright("", session.$width)>>\x1b[0m
+\x1b[0;48;5;9m<<padright("", session.$width)>>\x1b[0m
+\x1b[0;48;5;9m<<padright("", session.$width)>>\x1b[0m
+\x1b[0;48;5;9m<<padright("", session.$width)>>\x1b[0m
+\x1b[0;48;5;9m<<padright("", session.$width)>>\x1b[0m
+\x1b[0;48;5;9m<<padright("", session.$width)>>\x1b[0m
+\x1b[0;48;5;9m<<padright("", session.$width)>>\x1b[0m
+\x1b[0;48;5;9m<<padright("", session.$width)>>\x1b[0m
+\x1b[0;48;5;9m<<padright("", session.$width)>>\x1b[0m
+\x1b[0;48;5;9m<<padright("", session.$width)>>\x1b[0m
+\x1b[0;48;5;9m<<padright("", session.$width)>>\x1b[0m
+\x1b[0;48;5;9m<<padright("", session.$width)>>\x1b[0m
+\x1b[0;48;5;9m<<padright("", session.$width)>>\x1b[0m
+\x1b[0;48;5;9m<<padright("", session.$width)>>\x1b[37;1m\x1b[13A\r<<center("Access Revoked", session.$width - 2)>>\x1b[0;48;5;9m
+<<center(sprintf("You user has been removed"), session.$width - 2)>>

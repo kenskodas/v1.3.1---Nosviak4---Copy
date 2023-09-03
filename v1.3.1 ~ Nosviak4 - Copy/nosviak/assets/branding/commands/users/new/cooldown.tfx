@@ -1,0 +1,2 @@
+ \x1b[0mPlease set the cooldown for the user (0 = no limit).
+ Set Cooldown> \x1b[38;5;11m

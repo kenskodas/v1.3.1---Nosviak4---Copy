@@ -1,0 +1,2 @@
+ <<target.$username>> promoted to API.
+ When they next login ask them to run the `apikey` command to generate a key.

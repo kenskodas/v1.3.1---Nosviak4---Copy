@@ -1,0 +1,8 @@
+<?swash
+	var gradient = glamour.newThemeGradient(user.$theme)
+?>
+<<gradient.Marshal(glamour.$foreground, "     _______ _______ ___ ___ _______ _______ _______ _______ ______ ___ ___ ")>>
+<<gradient.Marshal(glamour.$foreground, "    |_     _|    |  |   |   |    ___|    |  |_     _|       |   __ \   |   |")>>
+<<gradient.Marshal(glamour.$foreground, "     _|   |_|       |   |   |    ___|       | |   | |   -   |      <\     / ")>>
+<<gradient.Marshal(glamour.$foreground, "    |_______|__|____|\_____/|_______|__|____| |___| |_______|___|__| |___|  ")>>
+       Use the Tab key to navigate through your items. Press Q to exit.

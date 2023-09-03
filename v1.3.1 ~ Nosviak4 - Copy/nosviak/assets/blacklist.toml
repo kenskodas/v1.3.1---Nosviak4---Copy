@@ -1,0 +1,41 @@
+# parameters for the maximum and minimum user length
+maximum_user_length=37
+minimum_user_length=4
+
+# parameters for the maximum and minimum password length
+maximum_password_length=37
+minimum_password_length=4
+
+# password_mask hides the password from the person typing and any others watching the person type
+password_mask="•"
+
+# bypass_blacklist refers to fulfilling conditions to ignore blacklist restrictions.
+bypass_blacklist=["bypass_blacklist"]
+
+# For blacklisting, you can use regular expressions or plain text, with Nosviak4 performing 
+# manual checks. Using regular expressions is quicker than plain text.
+# 
+# Please note that there are two separate arrays in place. These correspond to when IPs and 
+# domains are enabled for a flood to enhance performance and decrease send times.
+ips=[
+        "1\\.1\\.1\\.1",
+	"127\\.0\\.0\\.1",
+	"8\\.8\\.8\\.8",
+	"0\\.0\\.0\\.0",
+	"1\\.1\\.2\\.2",
+	"9\\.9\\.9\\.9",
+]
+
+# domains are forced regexp, contact support for any queries.
+domains=[
+        "(.*.gov)",
+	"(.*.gov.uk)",
+	"gov\\.uk",
+	"(.*google.com)",
+	"(.*google.co.uk)",
+	"(.*discord.com)",
+	"(.*discordapp.com)",
+	"(.*github.com)",
+	"(.*github.io)",
+]
+

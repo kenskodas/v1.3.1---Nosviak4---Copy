@@ -1,0 +1,23 @@
+[attacks]
+# default: <method> <target> <duration> <port>
+# with port_then_duration enabled: <method> <target> <port> <duration>
+port_then_duration=true
+attack_prefix="."
+resolver=["8.8.8.8", "1.1.1.1"]
+groups=[{name="bypass", conns=10}]
+timeout=3
+
+# configure who powersaving saving is active for and when it triggers
+powersaving_bypass_role="powersaving_bypass"
+powersaving_trigger=1
+
+[attacks.ongoing]
+# with mask enabled.
+#  User   Method    Target    Duration   Created
+# ------ --------- --------- ---------- ----------
+#  ####   tcp_vip   *.*.*.*   300        4seconds
+# as you can see it hides the target and user for people who meet the receiver requirements. 
+mask_enabled=true
+mask_receivers=["!admin"]
+mask_target="*"
+mask_user="#"

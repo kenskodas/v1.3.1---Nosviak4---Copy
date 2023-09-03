@@ -1,0 +1,12 @@
+
+[peasant]
+description="the lowest level plan"
+
+# metaData about the plan
+roles=["admin"]
+theme="default"
+maxtime=100
+cooldown=30
+concurrents=2
+plan_length=30
+max_sessions=1

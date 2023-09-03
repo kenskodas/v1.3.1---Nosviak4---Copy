@@ -1,0 +1,13 @@
+[web]
+enabled=true
+address=""
+port=3000
+
+[web.ssl]
+enabled=false
+cert="./assets/cert.pem"
+key="./assets/key.pem"
+
+[web.telegram]
+enabled=false
+token=""
